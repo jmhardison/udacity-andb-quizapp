@@ -10,4 +10,7 @@
     <color name="dockerQuestionBackgroundCorrect">#71c93e</color>
     <color name="dockerQuestionBorderCorrect">#498e21</color>
     <color name="dockerQuestionBorder">#04b6f0</color>
+    <color name="colorWrongAnswerText">#ffa1a1</color>
+    <color name="colorCorrectAnswerText">#124b00</color>
+    <color name="colorNormalAnswerText">@android:color/primary_text_light</color>
 </resources>

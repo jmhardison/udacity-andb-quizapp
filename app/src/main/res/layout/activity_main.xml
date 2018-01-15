@@ -395,7 +395,8 @@
                     android:fontFamily="sans-serif"
                     android:text="@string/questions_question_6_answer1"
                     android:textSize="@dimen/questions_radiobutton_textsize"
-                    android:textStyle="italic"/>
+                    android:textStyle="italic"
+                    />
                 <RadioButton
                     android:id="@+id/rb_questions_6_answer2"
                     android:layout_width="wrap_content"

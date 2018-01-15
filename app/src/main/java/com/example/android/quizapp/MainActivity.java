@@ -1,6 +1,7 @@
 package com.example.android.quizapp;
 
 import android.content.res.TypedArray;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    /**
+     * Scores the quiz.
+     * @param view
+     */
     public void scoreButtonPressed(View view){
         //disable score button
         disableScoreButton();
@@ -44,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Resets the quiz to default state.
+     * @param view
+     */
     public void resetButtonPressed(View view){
         //reset colors
         resetQuestionColor();
@@ -60,16 +70,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Disables the score button
+     */
     private void disableScoreButton(){
         Button scoreBtn = (Button)findViewById(R.id.btn_score);
         scoreBtn.setEnabled(false);
     }
 
+    /**
+     * Enables the score button
+     */
     private void enableScoreButton(){
         Button scoreBtn = (Button)findViewById(R.id.btn_score);
         scoreBtn.setEnabled(true);
     }
 
+    /**
+     * Logic to score the questions. Need to refactor in future to use less findViewById()
+     */
     private void scoreQuestions(){
 
         for (int questionNumber = 1; questionNumber <= numberOfQuestions; questionNumber++) {
@@ -251,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * resets all question backgrounds to blue
      */
-    public void resetQuestionColor(){
+    private void resetQuestionColor(){
         for(int i =0; i<numberOfQuestions; i++){
 
             int idOfQuestion = arrayOfQuestionIDs.getResourceId(i,0);
@@ -260,6 +279,26 @@ public class MainActivity extends AppCompatActivity {
                 LinearLayout layoutToReset = (LinearLayout) findViewById(idOfQuestion);
                 //change color back to normal rounded theme
                 layoutToReset.setBackgroundResource(R.drawable.rounded_question);
+
+                //get children and set text color if appropriate
+                for(int i2 = 0; i2 <= layoutToReset.getChildCount(); i2++){
+                    View holdChildView =layoutToReset.getChildAt(i2);
+
+                    //based on the type view is reported as, set it's color while casting.
+                    if (holdChildView instanceof TextView) {
+                        ((TextView) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorNormalAnswerText));
+                    } else if (holdChildView instanceof CheckBox) {
+                        ((CheckBox) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorNormalAnswerText));
+                    } else if (holdChildView instanceof EditText) {
+                        ((EditText) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorNormalAnswerText));
+                    } else if (holdChildView instanceof RadioGroup) {
+                        for(int i3 = 0; i3 < ((RadioGroup) holdChildView).getChildCount(); i3++) {
+                            RadioButton holdRadioChildView = (RadioButton)((RadioGroup) holdChildView).getChildAt(i3);
+                            holdRadioChildView.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorNormalAnswerText));
+                        }
+                    }
+                }
+
             }
             else{
                 //skip run should not be 0
@@ -272,29 +311,68 @@ public class MainActivity extends AppCompatActivity {
      * Sets specified question to wrong answer color.
      * @param questionID
      */
-    public void setQuestionWrongColor(int questionID){
+    private void setQuestionWrongColor(int questionID){
         //get LinearLayout question view.
         LinearLayout layoutToReset = (LinearLayout)findViewById(questionID);
         //change color back to normal rounded theme
         layoutToReset.setBackgroundResource(R.drawable.rounded_question_wronganswer);
+
+
+        //get children and set text color if appropriate
+        for(int i = 0; i <= layoutToReset.getChildCount(); i++){
+            View holdChildView =layoutToReset.getChildAt(i);
+
+            //based on the type view is reported as, set it's color while casting.
+            if (holdChildView instanceof TextView) {
+                ((TextView) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorWrongAnswerText));
+            } else if (holdChildView instanceof CheckBox) {
+                ((CheckBox) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorWrongAnswerText));
+            } else if (holdChildView instanceof EditText) {
+                ((EditText) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorWrongAnswerText));
+            } else if (holdChildView instanceof RadioGroup) {
+                for(int i2 = 0; i2 < ((RadioGroup) holdChildView).getChildCount(); i2++) {
+                    RadioButton holdRadioChildView = (RadioButton)((RadioGroup) holdChildView).getChildAt(i2);
+                    holdRadioChildView.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorWrongAnswerText));
+                }
+            }
+        }
     }
 
     /**
      * Sets specified question to correct answer color.
      * @param questionID
      */
-    public void setQuestionCorrectColor(int questionID){
+    private void setQuestionCorrectColor(int questionID){
         //get LinearLayout question view.
         LinearLayout layoutToReset = (LinearLayout)findViewById(questionID);
         //change color back to normal rounded theme
         layoutToReset.setBackgroundResource(R.drawable.rounded_question_correctanswer);
+
+        //get children and set text color if appropriate
+        for(int i = 0; i <= layoutToReset.getChildCount(); i++){
+            View holdChildView =layoutToReset.getChildAt(i);
+
+            //based on the type view is reported as, set it's color while casting.
+            if (holdChildView instanceof TextView) {
+                ((TextView) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorCorrectAnswerText));
+            } else if (holdChildView instanceof CheckBox) {
+                ((CheckBox) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorCorrectAnswerText));
+            } else if (holdChildView instanceof EditText) {
+                ((EditText) holdChildView).setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.colorCorrectAnswerText));
+            } else if (holdChildView instanceof RadioGroup) {
+                for(int i2 = 0; i2 < ((RadioGroup) holdChildView).getChildCount(); i2++) {
+                    RadioButton holdRadioChildView = (RadioButton)((RadioGroup) holdChildView).getChildAt(i2);
+                    holdRadioChildView.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorCorrectAnswerText));
+                }
+            }
+        }
     }
 
 
     /**
      * Loops through all questions, and then that questions answers, and based on type resets to unchecked, unselected, or default text.
      */
-    public void resetAllAnswers(){
+    private void resetAllAnswers(){
         //outer for is or num questions
         for(int i = 0; i<=numberOfQuestions; i++){
             int idOfQuestion = arrayOfQuestionIDs.getResourceId(i,0);
