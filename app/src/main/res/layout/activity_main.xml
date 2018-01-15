@@ -15,13 +15,15 @@
 
         <!-- Top Item -->
         <ImageView
+            android:id="@+id/dockertop"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dockerImagesHeight"
             android:scaleType="centerInside"
             android:paddingHorizontal="20dp"
             android:src="@drawable/dockerquiztop"
             android:descendantFocusability="beforeDescendants"
-            android:focusableInTouchMode="true"/>
+            android:focusableInTouchMode="true"
+            android:focusable="true"/>
         <!--##########-->
 
         <!-- question 1 -->
@@ -715,9 +717,6 @@
                 android:onClick="resetButtonPressed"/>
         </LinearLayout>
 
-        <!-- future scoring area -->
-
-        <!--##########-->
 
         <!-- Bottom Item -->
         <ImageView

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">QuizApp</string>
     <string name="questions_generic_true">True</string>
@@ -11,9 +12,9 @@
     <string name="questions_question_1_answer4">guest</string>
     <string name="questions_question_2_title">Question 2</string>
     <string name="questions_question_2_questionline">What command allows you to run a command in a running container?</string>
-    <string name="questions_question_2_answer1">docker exec</string>
+    <string name="questions_question_2_answer1">docker attach</string>
     <string name="questions_question_2_answer2">docker container</string>
-    <string name="questions_question_2_answer3">docker attach</string>
+    <string name="questions_question_2_answer3">docker exec</string>
     <string name="questions_question_2_answer4">docker start</string>
     <string name="questions_question_3_title">Question 3</string>
     <string name="questions_question_3_questionline">What restart policy ensures a container restarts regardless of failure or exit type?</string>
@@ -27,9 +28,9 @@
     <string name="questions_question_5_answer4">rancher-os</string>
     <string name="questions_question_6_title">Question 6</string>
     <string name="questions_question_6_questionline">A libsecret volume driver provides what capability?</string>
-    <string name="questions_question_6_answer1">backend secret storage</string>
+    <string name="questions_question_6_answer1">encrypting Dockerfiles</string>
     <string name="questions_question_6_answer2">book of secrets</string>
-    <string name="questions_question_6_answer3">encrypting Dockerfiles</string>
+    <string name="questions_question_6_answer3">backend secret storage</string>
     <string name="questions_question_6_answer4">enabling bitlocker</string>
     <string name="questions_question_7_title">Question 7</string>
     <string name="questions_question_7_questionline">Mutually Authenticated TLS is used for node-to-node cluster communications?</string>
@@ -37,10 +38,10 @@
     <string name="questions_question_8_questionline">Scaling up a Docker service requires all instances to be recreated?</string>
     <string name="questions_question_9_title">Question 9</string>
     <string name="questions_question_9_questionline">What docker feature being developed allows Linux containers to run on Windows?</string>
-    <string name="questions_question_9_answer1">LCoW</string>
+    <string name="questions_question_9_answer1">UCP</string>
     <string name="questions_question_9_answer2">Azure Files</string>
     <string name="questions_question_9_answer3">Bash on Windows</string>
-    <string name="questions_question_9_answer4">UCP</string>
+    <string name="questions_question_9_answer4">LCoW</string>
     <string name="questions_question_10_title">Question 10</string>
     <string name="questions_question_10_questionline">Docker UCP can support multiple platform types in the same deployment, such as?</string>
     <string name="questions_question_10_answer1">Windows</string>
@@ -49,4 +50,5 @@
     <string name="questions_question_10_answer4">OS/2</string>
     <string name="button_score_text">Score</string>
     <string name="button_reset_text">Reset</string>
+    <string name="question3_correct_answer">always</string>
 </resources>
