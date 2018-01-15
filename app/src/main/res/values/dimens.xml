@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dockerImagesHeight">100dp</dimen>
+    <dimen name="rounded_question_borderline_width">4dp</dimen>
+    <dimen name="rounded_questions_radius">20dp</dimen>
+    <dimen name="rounded_questions_padding_left">20dp</dimen>
+    <dimen name="rounded_questions_padding_top">10dp</dimen>
+    <dimen name="rounded_questions_padding_right">20dp</dimen>
+    <dimen name="rounded_questions_padding_bottom">10dp</dimen>
+    <dimen name="question_padding_left">15dp</dimen>
+    <dimen name="question_padding_leftcheckbox">20dp</dimen>
+    <dimen name="question_padding_leftedittext">20dp</dimen>
+    <dimen name="question_layout_marginRight">20dp</dimen>
+    <dimen name="question_layout_marginLeft">20dp</dimen>
+    <dimen name="question_layout_marginTop">10dp</dimen>
+    <dimen name="questions_radiogroup_marginHorizontal">5sp</dimen>
+    <dimen name="questions_radiobutton_textsize">14sp</dimen>
+    <dimen name="questions_title_textsize">10sp</dimen>
+    <dimen name="question_questionline_textsize">16sp</dimen>
+</resources>
