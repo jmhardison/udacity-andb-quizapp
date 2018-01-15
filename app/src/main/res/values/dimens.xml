@@ -17,4 +17,5 @@
     <dimen name="questions_radiobutton_textsize">14sp</dimen>
     <dimen name="questions_title_textsize">10sp</dimen>
     <dimen name="question_questionline_textsize">16sp</dimen>
+    <dimen name="button_layout_margin">5dp</dimen>
 </resources>

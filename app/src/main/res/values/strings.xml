@@ -47,4 +47,6 @@
     <string name="questions_question_10_answer2">Linux</string>
     <string name="questions_question_10_answer3">IBM-Z</string>
     <string name="questions_question_10_answer4">OS/2</string>
+    <string name="button_score_text">Score</string>
+    <string name="button_reset_text">Reset</string>
 </resources>

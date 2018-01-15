@@ -24,7 +24,6 @@
             android:focusableInTouchMode="true"/>
         <!--##########-->
 
-
         <!-- question 1 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,6 +32,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_1"
             android:orientation="vertical"
             >
             <TextView
@@ -99,7 +99,6 @@
         </LinearLayout>
         <!--##########-->
 
-
         <!-- question 2 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,6 +107,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_2"
             android:orientation="vertical"
             >
             <TextView
@@ -174,8 +174,6 @@
         </LinearLayout>
         <!--##########-->
 
-
-
         <!-- question 3 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -184,6 +182,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_3"
             android:orientation="vertical"
             >
             <TextView
@@ -216,7 +215,6 @@
         </LinearLayout>
         <!--##########-->
 
-
         <!-- question 4 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -225,6 +223,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_4"
             android:orientation="vertical"
             >
             <TextView
@@ -275,7 +274,6 @@
         </LinearLayout>
         <!--##########-->
 
-
         <!-- question 5 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -284,6 +282,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_5"
             android:orientation="vertical"
             >
             <TextView
@@ -350,8 +349,6 @@
         </LinearLayout>
         <!--##########-->
 
-
-
         <!-- question 6 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -360,6 +357,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_6"
             android:orientation="vertical"
             >
             <TextView
@@ -426,8 +424,6 @@
         </LinearLayout>
         <!--##########-->
 
-
-
         <!-- question 7 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -436,6 +432,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_7"
             android:orientation="vertical"
             >
             <TextView
@@ -486,7 +483,6 @@
         </LinearLayout>
         <!--##########-->
 
-
         <!-- question 8 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -495,6 +491,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_8"
             android:orientation="vertical"
             >
             <TextView
@@ -545,8 +542,6 @@
         </LinearLayout>
         <!--##########-->
 
-
-
         <!-- question 9 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -555,6 +550,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_9"
             android:orientation="vertical"
             >
             <TextView
@@ -621,9 +617,6 @@
         </LinearLayout>
         <!--##########-->
 
-
-
-
         <!-- question 10 -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -632,6 +625,7 @@
             android:layout_marginRight="@dimen/question_layout_marginRight"
             android:layout_marginTop="@dimen/question_layout_marginTop"
             android:background="@drawable/rounded_question"
+            android:id="@+id/ll_question_10"
             android:orientation="vertical"
             >
             <TextView
@@ -697,8 +691,31 @@
         <!--##########-->
 
         <!-- button to score -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/question_layout_marginTop">
+            <Button
+                android:layout_margin="@dimen/button_layout_margin"
+                android:id="@+id/btn_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_score_text"
+                android:onClick="scoreButtonPressed"/>
 
-        <!-- scoring area -->
+            <Button
+                android:layout_margin="@dimen/button_layout_margin"
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_reset_text"
+                android:onClick="resetButtonPressed"/>
+        </LinearLayout>
+
+        <!-- future scoring area -->
 
         <!--##########-->
 
