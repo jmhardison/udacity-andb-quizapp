@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">QuizApp</string>
     <string name="questions_generic_true">True</string>
     <string name="questions_generic_false">False</string>
@@ -51,4 +51,5 @@
     <string name="button_score_text">Score</string>
     <string name="button_reset_text">Reset</string>
     <string name="question3_correct_answer">always</string>
+    <string name="toast_score_message">You answered <xliff:g example="2" id="score">%d</xliff:g> out of <xliff:g example="10" id="total">%d</xliff:g> correct.</string>
 </resources>

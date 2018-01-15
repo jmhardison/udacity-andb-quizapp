@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         scoreQuestions();
 
         //send some toast
-        Toast.makeText(this, "You answered " + scoreOfTest + " out of " + numberOfQuestions + " correct.", Toast.LENGTH_SHORT).show();
+        String toastText = getString(R.string.toast_score_message, scoreOfTest, numberOfQuestions);
+        Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
     }
 
     public void resetButtonPressed(View view){
