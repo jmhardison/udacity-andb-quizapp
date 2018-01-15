@@ -4,9 +4,9 @@
     android:shape="rectangle">
     <stroke
         android:width="@dimen/rounded_question_borderline_width"
-        android:color="@color/dockerQuestionBorder" />
+        android:color="@color/dockerQuestionBorderCorrect" />
     // the inside color
-    <solid android:color="@color/dockerQuestionBackground" />
+    <solid android:color="@color/dockerQuestionBackgroundCorrect" />
     <corners android:radius="@dimen/rounded_questions_radius" />
     <padding
         android:bottom="@dimen/rounded_questions_padding_bottom"

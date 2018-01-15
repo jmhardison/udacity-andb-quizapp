@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These typedarrays get used to change all questions colors, or to reset all answer states. -->
+    <!-- listing of LinearLayer question id's -->
+    <array name="ll_questions">
+        <item>@id/ll_question_1</item>
+        <item>@id/ll_question_2</item>
+        <item>@id/ll_question_3</item>
+        <item>@id/ll_question_4</item>
+        <item>@id/ll_question_5</item>
+        <item>@id/ll_question_6</item>
+        <item>@id/ll_question_7</item>
+        <item>@id/ll_question_8</item>
+        <item>@id/ll_question_9</item>
+        <item>@id/ll_question_10</item>
+    </array>
+
+    <!-- list of all array id's that represent all available answer id's -->
+    <array name="listofallanswerarrays">
+        <item>@array/question1_answers</item>
+        <item>@array/question2_answers</item>
+        <item>@array/question3_answers</item>
+        <item>@array/question4_answers</item>
+        <item>@array/question5_answers</item>
+        <item>@array/question6_answers</item>
+        <item>@array/question7_answers</item>
+        <item>@array/question8_answers</item>
+        <item>@array/question9_answers</item>
+        <item>@array/question10_answers</item>
+    </array>
+
+    <!-- question 1 available answers -->
+    <array name="question1_answers">
+        <item>@id/rb_questions_1_answer1</item>
+        <item>@id/rb_questions_1_answer2</item>
+        <item>@id/rb_questions_1_answer3</item>
+        <item>@id/rb_questions_1_answer4</item>
+    </array>
+
+    <!-- question 2 available answers -->
+    <array name="question2_answers">
+        <item>@id/rb_questions_2_answer1</item>
+        <item>@id/rb_questions_2_answer2</item>
+        <item>@id/rb_questions_2_answer3</item>
+        <item>@id/rb_questions_2_answer4</item>
+    </array>
+
+    <!-- question 3 available answers -->
+    <array name="question3_answers">
+        <item>@id/et_questions_3_answer</item>
+    </array>
+
+    <!-- question 4 available answers -->
+    <array name="question4_answers">
+        <item>@id/rb_questions_4_answer1</item>
+        <item>@id/rb_questions_4_answer2</item>
+    </array>
+
+    <!-- question 5 available answers -->
+    <array name="question5_answers">
+        <item>@id/rb_questions_5_answer1</item>
+        <item>@id/rb_questions_5_answer2</item>
+        <item>@id/rb_questions_5_answer3</item>
+        <item>@id/rb_questions_5_answer4</item>
+    </array>
+
+    <!-- question 6 available answers -->
+    <array name="question6_answers">
+        <item>@id/rb_questions_6_answer1</item>
+        <item>@id/rb_questions_6_answer2</item>
+        <item>@id/rb_questions_6_answer3</item>
+        <item>@id/rb_questions_6_answer4</item>
+    </array>
+
+    <!-- question 7 available answers -->
+    <array name="question7_answers">
+        <item>@id/rb_questions_7_answer1</item>
+        <item>@id/rb_questions_7_answer2</item>
+    </array>
+
+    <array name="question8_answers">
+        <item>@id/rb_questions_8_answer1</item>
+        <item>@id/rb_questions_8_answer2</item>
+    </array>
+
+    <!-- question 9 available answers -->
+    <array name="question9_answers">
+        <item>@id/rb_questions_9_answer1</item>
+        <item>@id/rb_questions_9_answer2</item>
+        <item>@id/rb_questions_9_answer3</item>
+        <item>@id/rb_questions_9_answer4</item>
+    </array>
+
+    <!-- question 10 available answers -->
+    <array name="question10_answers">
+        <item>@id/cb_questions_10_answer1</item>
+        <item>@id/cb_questions_10_answer2</item>
+        <item>@id/cb_questions_10_answer3</item>
+        <item>@id/cb_questions_10_answer4</item>
+    </array>
+
+
+
+</resources>

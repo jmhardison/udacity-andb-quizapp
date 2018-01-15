@@ -2,8 +2,12 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#3a2ee2</color>
     <color name="dockerSkyBackground">#e3f3fc</color>
     <color name="dockerQuestionBackground">#77d0f4</color>
+    <color name="dockerQuestionBackgroundWrong">#c9563e</color>
+    <color name="dockerQuestionBorderWrong">#c44024</color>
+    <color name="dockerQuestionBackgroundCorrect">#71c93e</color>
+    <color name="dockerQuestionBorderCorrect">#498e21</color>
     <color name="dockerQuestionBorder">#04b6f0</color>
 </resources>
